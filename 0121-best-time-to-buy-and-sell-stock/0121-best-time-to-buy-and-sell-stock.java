@@ -4,11 +4,11 @@ class Solution {
         int maxProfit =0;
         int profit = 0;
         int smallest=prices[0];
-        int position = 0; 
+         
         for(int i =1;i<n;i++){
             if(prices[i]<smallest){
                 smallest = prices[i];
-                position = i;
+               
             }
             else{
                  profit = prices[i] - smallest;
