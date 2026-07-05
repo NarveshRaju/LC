@@ -3,7 +3,8 @@ class Solution {
         Set<Integer> st = new HashSet<>();
         int smallest = Integer.MAX_VALUE;
         int largest = 0;
-        for(int i = 0; i<nums.length;i++){
+        int n = nums.length;
+        for(int i = 0; i<n;i++){
             if(nums[i]>0){
                 st.add(nums[i]);
                 if(nums[i]<smallest){
